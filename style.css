@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     border-bottom: 30px solid black;
+    position: relative;
+    height: 600px;
 }
 
 .man {
@@ -19,4 +21,17 @@
 .green {
     width: 300px;
     
+}
+
+.tree {
+    position: absolute;
+      bottom: 8px;
+      right: 16px;
+
+}
+
+.human {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
