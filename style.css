@@ -34,10 +34,17 @@
     position: absolute;
     bottom: 8px;
     left: 16px;
+   
 }
   
 .mango {
     position: absolute;
      right: 200px;
     top: 450px;
+}
+
+.ball {
+    position: absolute;
+    bottom: 0px;
+    left: 80px;
 }
