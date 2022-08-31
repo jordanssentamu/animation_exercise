@@ -1,8 +1,10 @@
 .container {
     margin: 0px;
     padding: 0px;
+    border-bottom: 30px solid black;
 }
 
 .man {
     width: 100px;
 }
+
