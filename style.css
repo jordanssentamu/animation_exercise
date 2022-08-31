@@ -1,0 +1,4 @@
+.balls, .human, .fruit, .tree {
+    width: 26px;
+    height: 26px;
+}
