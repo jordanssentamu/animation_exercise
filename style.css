@@ -39,7 +39,7 @@
   
 .mango {
     position: absolute;
-     right: 200px;
+    right: 200px;
     top: 450px;
 }
 
@@ -47,4 +47,32 @@
     position: absolute;
     bottom: 0px;
     left: 80px;
+    animation-name: load;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+        right: 0px;
+        bottom: 0px;
+    }
+    50% {
+        transform: rotate(180deg);
+        right: 50px;
+        bottom: 100px;
+    }
+    75% {
+        transform: rotate(270deg);
+        right: 100px;
+        bottom: 150px;
+    }
+    100% {
+        transform: rotate(0deg); 
+        right: 120px;
+        bottom: 0px;
+    }
 }
