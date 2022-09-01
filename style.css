@@ -4,6 +4,8 @@
     border-bottom: 30px solid black;
     position: relative;
     height: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .man {
@@ -41,7 +43,26 @@
     position: absolute;
     right: 200px;
     top: 450px;
-}
+    animation-name: fall;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    }
+
+    @keyframes fall {
+        from {
+            top: 450px;
+            right: 200px;
+
+        }
+        to {
+            top: 540px;
+            right: 200px; 
+
+        }
+    }
 
 .ball {
     position: absolute;
@@ -49,9 +70,9 @@
     left: 80px;
     animation-name: load;
     animation-duration: 3s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
-
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
 }
 
 @keyframes load {
@@ -60,19 +81,18 @@
         right: 0px;
         bottom: 0px;
     }
+  
+    
     50% {
-        transform: rotate(180deg);
-        right: 50px;
-        bottom: 100px;
+        transform: rotate(60deg);
+        right: 0px;
+        bottom: 0px;
     }
-    75% {
-        transform: rotate(270deg);
-        right: 100px;
-        bottom: 150px;
-    }
+    
+
     100% {
-        transform: rotate(0deg); 
-        right: 120px;
+        transform: rotate(180deg); 
+        right: 200px;
         bottom: 0px;
     }
 }
